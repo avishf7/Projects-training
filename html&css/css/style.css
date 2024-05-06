@@ -1,0 +1,180 @@
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration-line: none;
+    color: black;
+}
+
+a:hover{
+    color: brown;
+}
+
+a:active{
+    color: black;
+}
+
+
+h1{
+    
+    margin: 0;
+    padding: 2em 0 1em;
+    text-align: center;
+    font-size: 3.5rem;
+
+}
+
+
+u{
+    padding-bottom: 0.25em;
+    text-decoration-line: none;
+    border-bottom: black medium solid;
+}
+
+p{
+    font-weight: bold;
+    margin: 0;
+}
+
+ul{
+    font-weight: bold;
+    margin: 0;
+    padding: 1em;
+}
+
+.sec--ul{
+    color: saddlebrown;
+}
+
+.sec--ul li{
+    font-size: 0.80rem;
+}
+
+li{
+    font-size: 1.25rem;
+    margin: .5rem 0;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: #cf9fff;
+    align-items: center;
+}
+
+
+.image{
+    width: 100%;
+}
+
+.headicon {
+    margin: 0 auto;
+    padding: 1.25em 7em 1em 3em;
+    width: 200px;
+}
+
+
+.headcolumn{
+    width: 100%;
+}
+
+.headcolumn h2{
+    font-style: oblique;
+    border-left: thin solid black;
+    text-align: center;
+}
+
+
+#about_me{
+    background-color: brown;
+}
+
+#about_me p{
+    color: coral;
+}
+
+#projects{
+    background-color: coral;
+}
+
+.content{
+    padding: 1em 4em;
+}
+
+#projects p{
+    color: brown;
+    padding-left: 1em;
+}
+
+.githubicon{
+    padding-left: 0.75em;
+    width: 30px;
+}
+
+#achivements{
+    background-color: tomato;
+}
+
+#contact{
+    background-color: saddlebrown;
+    display: grid;
+    justify-items: center;
+}
+
+.form{
+    background-color: saddlebrown;
+    box-shadow: 0 0 30px tomato;
+    border-radius: 30px;
+    display: grid;
+    width: fit-content;
+    margin: 30px;
+    justify-items: center;
+}
+
+.form__item{
+    font-weight: bold;
+    font-size: 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    color: tomato;
+    padding: .75em;
+}
+
+.messege{
+    resize: vertical; 
+    width: 100%;
+    max-height: 150px;
+    min-height: 150px;
+    height: 150px;
+}
+
+.form__button{
+    background-color: coral;
+    color: brown;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    width: fit-content;
+    align-self: center;
+    margin: 1.5em 0 1em;
+    padding: .75em;
+}
+
+.form__button:active{
+    background-color: tomato;
+}
+
+
+
