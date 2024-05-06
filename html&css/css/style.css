@@ -41,6 +41,7 @@ u{
 }
 
 p{
+    padding: 1rem 0;
     font-weight: bold;
     margin: 0;
 }
@@ -129,7 +130,7 @@ main{
     width: 30px;
 }
 
-#achivements{
+#achievements{
     background-color: tomato;
 }
 
