@@ -1,125 +1,134 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>portfolio</title>
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        
-        <header>
-                <div class="image">
-                    <img class="headicon" src="images/programming.png" alt="a programmer">
-                </div>
-                <div class="headcolumn">
-                    <h2><a href="#about_me">About</a></h2>
-                </div>
-                <div class="headcolumn">
-                    <h2><a href="#projects">Projects</a></h2>
-                </div>
-                <div class="headcolumn">
-                    <h2><a href="#achivements">Achivements</a></h2>
-                </div>
-                <div class="headcolumn">
-                    <h2><a href="#contact">Contact</a></h2>
-                </div>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href="css/style.css" rel="stylesheet"> <!-- Link to external CSS file -->
+</head>
+<body>
+    
+    <header>
+        <!-- Header section with navigation -->
+        <div class="image">
+            <img class="headicon" src="images/programming.png" alt="a programmer"> <!-- Header icon -->
+        </div>
+        <div class="headcolumn">
+            <h2><a href="#about_me">About</a></h2> <!-- Link to About Me section -->
+        </div>
+        <div class="headcolumn">
+            <h2><a href="#projects">Projects</a></h2> <!-- Link to Projects section -->
+        </div>
+        <div class="headcolumn">
+            <h2><a href="#achievements">Achievements</a></h2> <!-- Link to Achievements section -->
+        </div>
+        <div class="headcolumn">
+            <h2><a href="#contact">Contact</a></h2> <!-- Link to Contact section -->
+        </div>
+    </header>
 
-        <main>
-            <div id="about_me">
-                <h1>Ab<u>out </u>me</h1>
-                <div class="content">
-                    <p> 
-                        I recently graduated with a bachelor's degree in computer science from JCT while serving in the Israeli Air Force. Currently,
-                        I'm learning full-stack development in my unit, focusing on HTML/CSS, JavaScript, React, and Node.js.
-                        I am a dedicated team player, committed to every task, 
-                        with a persistence and attention to detail that ensures I don’t give up on a problem until it's solved.
-                        Proficient in Python, C#, and .NET, with knowledge of C, C++, Bash, and Git,
-                        I'm excited to work on meaningful projects and make a difference.
-                    </p>
-                </div>
-            </div>
-
-            <div id="projects">
-                <h1>Pr<u>ojec</u>ts</h1>
-                <div class="content">
-                    <ul>
-                        <li>
-                            Drone deliveries | .NET
-                            <a href="https://github.com/avishf7/dotNet5782_9738_8790">
-                                <img class="githubicon" src="images/github_PNG20.png" alt="github icon">
-                            </a>
-                            <p>
-                                A project on the .NET platform for managing a drone
-                                delivery company, Using three-tier architecture, implementing 
-                                design patterns (singleton, factory, contract design),
-                                working with threads (by background worker)
-                                to create real-time delivery execution simulation,
-                                and using XML files for the database, writes WPF (XAML For UI, C # and Linq for the database).
-                            </p>
-                        </li>
-                        <li>
-                            <b>3D render | java</b>
-                            <a href="https://github.com/avishf7/3D-render">
-                                <img class="githubicon" src="images/github_PNG20.png" alt="github icon">
-                            </a>
-                            <p>
-                                A project on the .NET platform for managing a drone
-                                delivery company, Using three-tier architecture, implementing 
-                                design patterns (singleton, factory, contract design),
-                                working with threads (by background worker)
-                                to create real-time delivery execution simulation,
-                                and using XML files for the database, writes WPF (XAML For UI, C # and Linq for the database).
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="achievements">
-                <h1>Ach<u>ieveme</u>nts</h1>
-                <div class="content">
-                    <ul>
-                        <li>Hacketon participant 
-                            <ul class="sec--ul">
-                                <li>Dec 2023</li>
-                                <li>
-                                    I helped create a Chrome extension to report anti-Semitic posts and fake news on Twitter.
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+    <main>
+        <!-- About Me section -->
+        <div id="about_me">
+            <h1>Ab<u>out </u>me</h1>
+            <div class="content">
+                <p> 
+                    <!-- Personal introduction -->
+                    I recently graduated with a bachelor's degree in computer science from JCT while serving in the Israeli Air Force. Currently,
+                    I'm learning full-stack development in my unit, focusing on HTML/CSS, JavaScript, React, and Node.js.
+                    I am a dedicated team player, committed to every task, 
+                    with a persistence and attention to detail that ensures I don’t give up on a problem until it's solved.
+                    Proficient in Python, C#, and .NET, with knowledge of C, C++, Bash, and Git,
+                    I'm excited to work on meaningful projects and make a difference.
+                </p>
             </div>
         </div>
 
-            <div id="contact">
-                <h1>Co<u>nta</u>ct</h1>
-                <div class="content">
-                    <form action="https://www.w3schools.com/action_page.php" class="form">
-                        <div class="form__item" name="form contact">
-                            <label for="name">name:</label>
-                            <input class="name" type="text" name="name" required>
-                        </div>
-                        <div class="form__item">
-                            <label for="email">email:</label>
-                            <input class="email" type="email" name="email" required>
-                        </div>
-                        <div class="form__item">
-                            <label for="number">phone:</label>
-                            <input class="phone" type="tel" pattern="[0-9]{10}" name="phone" required>
-                        </div>
-                        <div class="form__item">
-                            <label for="messege">messege:</label>
-                            <textarea class="messege" type="text" name="messege" required></textarea>
-                        </div>
-                        <button class="form__button" type="submit" name="submit">submit</button>
-                    </form>
-                </div>
+        <!-- Projects section -->
+        <div id="projects">
+            <h1>Pr<u>ojec</u>ts</h1>
+            <div class="content">
+                <ul>
+                    <li>
+                        <!-- Project 1: Drone Deliveries -->
+                        Drone deliveries | .NET
+                        <a href="https://github.com/avishf7/dotNet5782_9738_8790">
+                            <img class="githubicon" src="images/github_PNG20.png" alt="github icon">
+                        </a>
+                        <p>
+                            <!-- Description of Project 1 -->
+                            A project on the .NET platform for managing a drone
+                            delivery company, Using three-tier architecture, implementing 
+                            design patterns (singleton, factory, contract design),
+                            working with threads (by background worker)
+                            to create real-time delivery execution simulation,
+                            and using XML files for the database, writes WPF (XAML For UI, C # and Linq for the database).
+                        </p>
+                    </li>
+                    <li>
+                        <!-- Project 2: 3D Render -->
+                        <b>3D render | Java</b>
+                        <a href="https://github.com/avishf7/3D-render">
+                            <img class="githubicon" src="images/github_PNG20.png" alt="github icon">
+                        </a>
+                        <p>
+                            <!-- Description of Project 2 -->
+                            A project on the .NET platform for managing a drone
+                            delivery company, Using three-tier architecture, implementing 
+                            design patterns (singleton, factory, contract design),
+                            working with threads (by background worker)
+                            to create real-time delivery execution simulation,
+                            and using XML files for the database, writes WPF (XAML For UI, C # and Linq for the database).
+                        </p>
+                    </li>
+                </ul>
             </div>
+        </div>
 
-        </main>
-    </body>
+        <!-- Achievements section -->
+        <div id="achievements">
+            <h1>Ach<u>ieveme</u>nts</h1>
+            <div class="content">
+                <ul>
+                    <li>Hackathon participant 
+                        <ul class="sec--ul">
+                            <li>Dec 2023</li>
+                            <li>
+                                <!-- Description of Achievement -->
+                                I helped create a Chrome extension to report anti-Semitic posts and fake news on Twitter.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contact section -->
+        <div id="contact">
+            <h1>Co<u>nta</u>ct</h1>
+            <div class="content">
+                <form action="https://www.w3schools.com/action_page.php" class="form">
+                    <div class="form__item" name="form contact">
+                        <label for="name">name:</label>
+                        <input class="name" type="text" name="name" required>
+                    </div>
+                    <div class="form__item">
+                        <label for="email">email:</label>
+                        <input class="email" type="email" name="email" required>
+                    </div>
+                    <div class="form__item">
+                        <label for="number">phone:</label>
+                        <input class="phone" type="tel" pattern="[0-9]{10}" name="phone" required>
+                    </div>
+                    <div class="form__item">
+                        <label for="message">message:</label>
+                        <textarea class="message" type="text" name="message" required></textarea>
+                    </div>
+                    <button class="form__button" type="submit" name="submit">submit</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+</body>
 </html>
