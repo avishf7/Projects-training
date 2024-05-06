@@ -65,23 +65,30 @@ li{
 }
 
 header {
-    height: 70px;
+    height: 75px;
     width: 100%;
     position: fixed;
     display: flex;
     background-color: #cf9fff;
     align-items: center;
+    font-size: 70%;
+}
+
+main{
+    display: grid;
 }
 
 
 .image{
     width: 100%;
+    display: grid;
+    justify-items: center;
 }
 
 .headicon {
     margin: 0 auto;
-    padding: 1.25em 7em 1em 3em;
-    width: 200px;
+    width: 50px;
+    padding-right: 2rem;
 }
 
 
@@ -109,7 +116,7 @@ header {
 }
 
 .content{
-    padding: 1em 4em;
+    padding: 4rem;
 }
 
 #projects p{
