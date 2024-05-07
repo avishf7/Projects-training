@@ -7,11 +7,13 @@ html{
 }
 
 body{
+    display: grid;
+    justify-content: center;
     margin: 0;
 }
 
 a{
-    text-decoration-line: none;
+    text-decoration: none;
     color: black;
 }
 
@@ -65,12 +67,13 @@ li{
 }
 
 header {
-    width: 100%;
+    width: 120%;
     position: fixed;
     display: flex;
     background-color: #cf9fff;
+    justify-self: center;
     align-items: center;
-    font-size: 80%;
+    font-size: 0.9rem;
 }
 
 main{
@@ -79,20 +82,19 @@ main{
 
 
 .image{
-    width: 100%;
     display: grid;
     justify-items: center;
 }
 
 .headicon {
     margin: 0 auto;
-    width: 50px;
+    width: 70px;
     padding-right: 2rem;
 }
 
 
 .headcolumn{
-    width: 100%;
+    flex-basis: 20%;
 }
 
 .headcolumn h2{
@@ -115,7 +117,8 @@ main{
 }
 
 .content{
-    padding: 4rem;
+    padding: 1rem 4rem;
+    max-width: 1000px;
 }
 
 #projects p{
@@ -159,10 +162,8 @@ main{
 }
 
 .message{
-    resize: vertical; 
-    width: 100%;
-    max-height: 150px;
-    min-height: 150px;
+    resize: none; 
+    width: 95%;
     height: 150px;
 }
 
