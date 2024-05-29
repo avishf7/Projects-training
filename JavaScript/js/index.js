@@ -3,22 +3,14 @@ const inputEl = document.querySelector(".input-title")
 const toDoListEl = document.querySelector(".to-do-list")
 let tasksList = []
 
-
-// ----------------------------------------------------------------
-// --Override the setItem function to trigger the 'storage' event--
-// ----------------------------------------------------------------
-const origSetItem = window.localStorage.setItem
-
-window.localStorage.setItem = function setItem(key, value) {
-  // Store in LocalStorage
-  const result = origSetItem.apply(this, arguments)
-
-  // Trigger a "storage" event so this window is alerted.
-  window.dispatchEvent(new Event("storage"))
-
-  return result
+/**
+ * Store in LocalStorage and Trigger a "storage" event to alert the render
+ */
+function UpdateStorageAndRenderPage(key, value) {
+    localStorage.setItem(key, value)
+    window.dispatchEvent(new Event("storage"))
 }
-// ---------------------------------------------------------------
+
 
 
 addBtn.addEventListener( 'click', () => {
@@ -31,10 +23,20 @@ addBtn.addEventListener( 'click', () => {
         })
     
         inputEl.value = ""
-        localStorage.setItem("tasks", JSON.stringify(tasksList))
+        UpdateStorageAndRenderPage("tasks", JSON.stringify(tasksList))
     }
 })
 
+/**
+ *  Execute a function when the user presses a key on the keyboard 
+ */
+inputEl.addEventListener("keypress", function(ev) {
+
+    if (ev.key === "Enter") {
+      ev.preventDefault();
+      addBtn.click();
+    }
+  });
 
 /**
  * Update the task list UI when 'storage' event is triggered.
@@ -82,7 +84,7 @@ function createTaskDeleteButton(task) {
  */
 function delBtnClickHandler(task) {
     return () => {
-        localStorage.setItem("tasks", JSON.stringify(tasksList.filter(t => t.desc !== task.desc)))
+        UpdateStorageAndRenderPage("tasks", JSON.stringify(tasksList.filter(t => t.desc !== task.desc)))
     }
 }
 
@@ -141,7 +143,7 @@ function liDropHandler(task) {
         const taskToMove = tasksList.splice(fromIndex, 1)[0]
         tasksList.splice(toIndex, 0, taskToMove)
 
-        localStorage.setItem("tasks", JSON.stringify(tasksList))
+        UpdateStorageAndRenderPage("tasks", JSON.stringify(tasksList))
     }
 }
 
@@ -196,7 +198,7 @@ function liDragstartHandler(liEl) {
 function liClickHandler(task) {
     return function () {
         task.isChecked = !task.isChecked
-        localStorage.setItem("tasks", JSON.stringify(tasksList))
+        UpdateStorageAndRenderPage("tasks", JSON.stringify(tasksList))
     }
 }
 
