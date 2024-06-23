@@ -1,6 +1,7 @@
 *, *::after, *::before{
     box-sizing: inherit;
     font-family: 'Times New Roman', Times, serif;
+    user-select: none;
 }
 
 html{
@@ -121,3 +122,7 @@ ul li:hover{
 
 
 
+ul li.hovered {
+    opacity: 0.5;
+    background-color: chocolate;
+}
