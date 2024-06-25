@@ -133,7 +133,6 @@ select{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  justify-content: flex-start;
 }
 
 .pic {
@@ -161,4 +160,20 @@ select{
 }
 
 
+@media screen and (max-width: 710px){
+  .pic-list {
+    flex-direction: column;
+    width: 100%;
+  }
+  .pic {
+    width: 100%;
+  }
 
+  img {
+    width: 100%;
+  }
+
+  .pic-col {
+    height: 3575px;
+  }
+}
